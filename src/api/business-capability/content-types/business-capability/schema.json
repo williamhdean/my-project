@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_capabilities",
+  "info": {
+    "singularName": "business-capability",
+    "pluralName": "business-capabilities",
+    "displayName": "Business Capability"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

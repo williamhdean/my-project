@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipe_ingredients",
+  "info": {
+    "singularName": "recipe-ingredient",
+    "pluralName": "recipe-ingredients",
+    "displayName": "recipe_ingredient"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ingredients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ingredient.ingredient",
+      "inversedBy": "recipe_ingredients"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "unit_of_measure": {
+      "type": "enumeration",
+      "enum": [
+        "count",
+        "oz",
+        "pound",
+        "bunch",
+        "fl oz",
+        "gallon",
+        "pair"
+      ]
+    }
+  }
+}
